@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Mahima
+Build-Jdk: 14.0.2
+Implementation-Title: RegistrationAPI
+Implementation-Version: 1.0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.a2z.shop
+Implementation-URL: https://spring.io/projects/spring-boot/RegistrationA
+ PI
+Created-By: Maven Integration for Eclipse
+

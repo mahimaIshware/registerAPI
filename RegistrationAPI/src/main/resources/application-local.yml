@@ -1,0 +1,40 @@
+server:
+  port: 8082
+
+#dataSource:
+#  name: 
+#  minPoolSize:  '5'
+#  maxPoolSize:  '10'
+#  maxWaitTime:  '10000'
+#  userName: shopuser
+#  password: shopuser
+#  driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#  jdbcUrl: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=UTC
+  
+query:
+  health: Select 
+  products: 
+
+swagger:
+  package: com.a2z.shop.controller
+  title: Shopping Cart Services
+  contact: Developer-Admin
+  email: shopping@infinity-ventures.com
+  version: 1.0.0
+  description: This is LOCAL description of the service.Sa;ljlkfjdlfgjdlkfjgldfgjlg
+  companyUrl: www.xyz.com
+  termsOfServiceUrl: www.xyz.com
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 3MB
+      max-file-size: 2097152
+      max-request-size: 3145728
+      
+      
+file:
+  upload-dir: vendorUploads
+  temp-dir: ./tmp
+  
+

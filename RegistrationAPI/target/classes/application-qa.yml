@@ -1,0 +1,46 @@
+server:
+  port: 8082
+
+dataSource:
+  name: 
+  minPoolSize:  '5'
+  maxPoolSize:  '10'
+  maxWaitTime:  '10000'
+  userName: shopuser
+  password: shopuser
+  driverClassName: org.mysql.jdbc.Driver
+  jdbcUrl: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=UTC
+  
+query:
+  health: Select 
+  products: 
+
+swagger:
+  package: com.a2z.shop.controller
+  title: Shopping Cart Services
+  contact: Developer-Admin
+  email: shopping@infinity-ventures.com
+  version: 1.0.0
+  description: This is QA description of the service.Sa;ljlkfjdlfgjdlkfjgldfgjlg
+  companyUrl: www.xyz.com
+  termsOfServiceUrl: www.xyz.com
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 3MB
+      max-file-size: 2097152
+      max-request-size: 3145728
+      
+      
+file:
+  upload-dir: vendorUploads
+  temp-dir: ./tmp
+  
+s3:
+  accessKey: AKIAXPPPQY3NHLH5GOWG
+  secretKey: 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
+  region: us-east-1
+  bucketName: stores4us-test
+  https : https://s3.amazonaws.com/stores4us-test/
+
